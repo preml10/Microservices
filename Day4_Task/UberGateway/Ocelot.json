@@ -1,0 +1,28 @@
+{
+  "ReRoutes": [
+    {
+      "DownStreamPathTemplate": "/api/Customer",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44306
+        }
+      ],
+      "UpStreamPathTemplate": "/ubergateway/CustomerManagement",
+      "UpStreamHttpMethod": [ "Get", "Put", "Post" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/Driver",
+      "DownStreamSchema": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44307
+        }
+      ],
+      "UpStreamPathTemplate": "/ubergateway/DriverManagement",
+      "UpStreamHttpMethod": [ "Get", "Put", "Post" ]
+    }
+  ]
+}
